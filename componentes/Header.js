@@ -148,9 +148,11 @@ class Header extends HTMLElement{
                 padding: 1em;
                 background-color: rgba(224, 236, 255, 0.95);
                 list-style-type: none;
+
             
             }
             .lista--menu-link{
+                color: darkblue;
                 text-decoration:none;
                 list-style-type: none;
             }
