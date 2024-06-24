@@ -14,13 +14,20 @@ class Header extends HTMLElement{
         const logo = this.createLogo()
         const logo2 = this.createLogo2()
         const listaMenu = this.createLista()
+        const listaMenuDesktop = this.createListaDesktop()
+
+        const containerDesktop = this.createContainerDesktop()
+        
 
         
         container.appendChild(listaMenu)
         container.appendChild(menu)
         container.appendChild(logo)
+
+        containerDesktop.append(listaMenuDesktop)
         
         header.appendChild(container)
+        header.appendChild(containerDesktop)
         header.appendChild(logo2)
         shadow.appendChild(header)
        
@@ -29,7 +36,8 @@ class Header extends HTMLElement{
     createHeader(){
         const header = document.createElement('header')
         header.classList.add('cabecalho')
-        
+        header.setAttribute('cor-fundo', 'rgba(224, 236, 255, 0.897)')
+        console.log(this.getAttribute('cor-fundo'))
         return header
     }
 
@@ -94,6 +102,30 @@ class Header extends HTMLElement{
         return logo2
     }
 
+    createContainerDesktop(){
+        const container = document.createElement('div')
+        container.classList.add('container--desktop')
+
+        return container
+    }
+
+    createListaDesktop(){
+        const listaMenu = document.createElement('ul')
+        const caminho = this.getAttribute('src')
+        listaMenu.classList.add('lista--menu--desktop')
+        listaMenu.innerHTML = `
+            <li class = "lista--menu-item-desktop"> <a class=" lista--menu-link-desktop"  href='${caminho}Pages/index-scratch.html'> NOTÍCIAS </a> </li>
+            <li class = "lista--menu-item-desktop"> <a class=" lista--menu-link-desktop"  href='${caminho}Pages/index-scratch.html'> PROJETOS </a> </li>
+            <li class = "lista--menu-item-desktop"> <a class=" lista--menu-link-desktop"  href='${caminho}Pages/Scratch/index-scratch.html'> SCRATCH </a> </li>
+            <li class = "lista--menu-item-desktop"> <a class=" lista--menu-link-desktop"  href='${caminho}Pages/index-scratch.html'> AGRINHO </a> </li>
+        
+        `
+        
+        return listaMenu
+    }
+
+
+
 
     connectedCallback(){
         const menu = this.shadowRoot.querySelector('.cabecalho--menu');
@@ -116,24 +148,27 @@ class Header extends HTMLElement{
     styles(){
         const style  = document.createElement('style')
         style.textContent = `
+        
             .cabecalho{
-                background-color: rgba(224, 236, 255, 0.897);
+                background-color: ${this.getAttribute('cor-fundo')};
                 height: 100px;
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
                 position: relative;
+                font-family: "Roboto", sans-serif;
                 
             }
             .cabecalho--container{
                 display:flex;
                 align-items: center;
+
             }
             .cabecalho--logo1{
-                width: 50%
+                width: 100px;
             }
             .cabecalho--logo2{
-                width: 90%
+                width: 200px;
             }
             .lista--menu{
                 display: none;
@@ -156,24 +191,50 @@ class Header extends HTMLElement{
                 text-decoration:none;
                 list-style-type: none;
             }
+
+            .lista--menu--desktop{
+                display: none;
+            }
+
             @media screen and (min-width: 768px){
                 .cabecalho{
-                    height: 150px;
+                    height: 250px;
                     justify-content: space-between;
                 }
 
                 .cabecalho--menu{
+                    display:none;
                     margin-left: 100px;
                 }
 
                 .cabecalho--logo1{
-                    width: 150px;
-                    height: 150px;
+                    width: 200px;
+                    height: 200px;
+                    margin-left: 50px;
                 } 
+                
                 .cabecalho--logo2{
-                    width:20%;
+                    width: 300px;
                     margin-right: 100px;
                     
+                }
+
+                .lista--menu--desktop{
+                   display:flex;
+                    margin:0px;
+                    padding: 0px;
+                   
+                }
+                .lista--menu-item-desktop{
+                    text-transform: uppercase;  
+                    padding: 1em;
+                    background-color: transparent;
+                    list-style-type: none;
+                    font-size: 28px;
+                }
+                .lista--menu-link-desktop{
+                    text-decoration: none;
+                  
                 }
             }
         `
