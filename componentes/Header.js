@@ -72,7 +72,7 @@ class Header extends HTMLElement{
             <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}/index.html'> HOME </a> </li>
             <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}pages/index-scratch.html'> NOTÍCIAS </a> </li>
             <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}pages/index-scratch.html'> PROJETOS </a> </li>
-            <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}pages/index-scratch.html'> SCRATCH </a> </li>
+            <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}Pages/Scratch/index-scratch.html'> SCRATCH </a> </li>
             <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}pages/index-scratch.html'> AGRINHO </a> </li>
         
         `
