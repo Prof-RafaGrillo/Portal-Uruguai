@@ -1,130 +1,71 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Tauri&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tauri&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Mono+One&display=swap');
+:root{
+    --cor-fundo-site: #fbfbfd;
+    --cor-titulo: #1D5D9B;
+    --tipo-fonte-titulo: "Rubik Mono One", monospace;
+    --tipo-fonte: "Open Sans", sans-serif;
+}
 
 body{
-    background: rgb(187,211,247);
-    background: linear-gradient(180deg, rgba(187,211,247,1) 0%, rgba(22,21,54,1) 100%);
-    font-family: "Noto Sans", sans-serif;
-}
-
-.corpo1{
-    background-color: rgba(224, 236, 255, 0.897) ;
-    font-size: 15px;
-    color: darkblue;
-    text-align: justify;
-    margin-top: 0.5em;
-    padding: 1em;
-}
-
-.item{
-    margin: 1em 0.5em;
-    border-radius: 2em;
-    display: flex;
-    justify-content:space-around;
-    background-color: rgba(224, 236, 255, 0.897);
-    align-items: center;
-}
-
-.item-descricao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    
-}
-
-.images{
-    width: 30%;
-}
-
-.buton{
-    background-color: #03961b;
-    color: white;
-    padding: 12px 28px; 
-    border: none;
-    border-radius: 12px; 
-}
-
-.titulo-comunidade{
+    background: var(--cor-fundo-site);
+    color: var(--cor-titulo);
     font-size: 16px;
-}
-.Logo-CCM{
-    width: 100px;
-    height: 100px;
+    font-family: var(--tipo-fonte);
 }
 
-@media screen and (min-width: 768px) {
-      .corpo1{
-        background-color: rgba(224, 236, 255, 0.897) ;
-        font-size: 150%;
-        color: darkblue;
-    }
+.efeito{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000da;
+    z-index: 7;
     
-    .item{
-         display: grid; 
-         grid-template-columns: 35% 65%;
-         align-items: center;
-         background-color: rgba(224, 236, 255, 0.897);
-         justify-content: space-evenly;
-         border-radius: 0px;
-         height: 300px;
-    }
 
-    .item img{
-        width: auto;
-        height: 300px;
-        margin-left: 100px;
-    }
-
-    .images{
-        width: 25%;
-    }
-    .item-descricao{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      
-    }
-    
-    .logos{
-        width: 100%;
-        font-size: 30px;
-    }
-    
-    .buton{
-        display: flex;
-        justify-content: space-between;
-        background-color: #03961b;
-        border: none; 
-        color: white; 
-        padding: 15px 32px; 
-        text-align: center; 
-        text-decoration: none; 
-        font-size: 16px;
-        margin: 4px 100px;
-        cursor: pointer; 
-        border-radius: 12px; 
-        
-    
-        font-family: "Tauri", sans-serif;
-    }
-    
-    .buton:hover{
-      
-        background-color: #a6f0ad; 
-        color: black; 
-    
-    }
-    .titulo-comunidade{
-        font-size: 45px;
-    }
 }
 
+.banner hr{
+    position: relative;
+    right: 125px;
+    width: 120px;
+    border: 5px solid var(--cor-titulo);
+}
+
+.banner h1 {
+    font-size: 42px;
+    width: 50%;
+    font-family: var(--tipo-fonte-titulo);
+    margin-bottom: 0.5em;
+    margin-left: 20px;
+}
+
+.banner p{
+    color: black;
+    font-weight: 600;
+    line-height: 2;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.banner--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 370px;
+    width: 100%;
+  
+}
+
+#curva{
+    position: absolute;
+    width: 100%;
+}
+.banner--img{
+    margin: auto 0;
+    position: relative;
+    z-index: 2;
+    width: 289px;
+    height: 275px;
+}

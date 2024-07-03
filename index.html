@@ -1,77 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal Uruguai</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="./main.js"></script>
-    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portal Uruguai</title>
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+                rel="stylesheet">
+        <script src="./main.js"></script>
+
 </head>
-       
+
 <body>
-        <header-component src="./" ></header-component>
-        
-        <section class="corpo1">
-             <h2>Bem-vindo ao Portal de Notícias do Colégio Republica Oriental do Uruguai </h2>
-               <p> Neste espaço, mantemos nossa comunidade escolar informada sobre os eventos mais recentes, 
-                conquistas, projetos e atividades emocionantes que acontecem em nosso colégio. </p>
-        </section>
-                    
-        <section class="logos">
+        <div class="efeito"></div>
+        <header-component src="./" cor-fundo="#ffffff"></header-component>
 
-                <div class="item">
-                        <img class="images" src="img/Logo-CCM.png" alt="">
-                        <div class="item-descricao">
-                                <h1>CCM</h1>
-                                <a href="https://civico-militares.vercel.app" target="_blank"><button class="buton">Saiba Mais</button></a>
-                        </div>
-                </div>
+        <section class="banner">
+                <hr />
+                <h1 class="banner--texto">Portal Uruguai</h1>
+                <p>Bem-vindo ao Portal de Notícias do Colégio Republica Oriental do Uruguai. Neste espaço, mantemos
+                        nossa comunidade escolar informada sobre os eventos mais recentes, conquistas, projetos e
+                        atividades emocionantes que acontecem em nosso colégio</p>
 
-                <div class="item">
-                        <img class="images" src="img/Arte-Cultura.png" alt="">
-                        <div class="item-descricao">
-                                <h1>ARTE E CULTURA</h1>
-                                <a href="https://site-arte-e-cultura.vercel.app" target="_blank"><button class="buton">Saiba Mais</button></a>
-                        </div>
-                </div>
-
-	        <div class="item">
-                        <img class="images" src="img/Esportes.png" alt="">
-                        <div class="item-descricao">
-                                <h1>ESPORTES</h1>
-                                <a href="https://site-esportes-one.vercel.app" target="_blank"><button class="buton">Saiba Mais</button></a>
-                        </div>
-                </div>
-
-	        <div class="item">
-                        <img class="images" src="img/Ola ENEM.png" alt="">
-                        <div class="item-descricao">
-                                <h1>OLÁ ENEM</h1>
-                                <a href="https://ol-enem.vercel.app" target="_blank"><button class="buton">Saiba Mais</button></a>
-                        </div>   
-                </div>
-
-                <div class="item">
-                        <img class="images" src="img/Talentos.png" alt="">
-                        <div class="item-descricao">
-                                <h1>TALENTOS URUGUAI</h1>
-                                <a href="https://talentosuruguai.vercel.app" target="_blank"><button class="buton">Saiba Mais</button></a>
-                        </div>
-                </div>
-
-                <div class="item">
-                        <img class="images" src="img/Comunidade-Escolar.png" alt="">
-                        <div class="item-descricao">
-                                <h1 class="titulo-comunidade">COMUNIDADE ESCOLAR</h1>
-                                <a href="https://comunidade-escolar.vercel.app" target="_blank"><button class="buton">Saiba Mais</button></a>    
-                        </div>
+                <div class="banner--container">
+                        <img src="./img/Logo-Portal.png" alt="" class="banner--img">
+                        <svg id="curva" viewBox="0 0 393 370" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M187.97 99.308C152.382 86.0832 111.604 24.5332 116.701 0.334717H0.5V370H393C372.17 362.907 325.655 341.991 306.237 315.07C281.964 281.419 280.931 279.934 271.118 234.407C259.702 189.281 223.558 112.533 187.97 99.308Z"
+                                        fill="url(#paint0_linear_3_17)" />
+                                <defs>
+                                        <linearGradient id="paint0_linear_3_17" x1="-0.0164394" y1="0.33471" x2="367.23"
+                                                y2="386.175" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#1D5D9B" />
+                                                <stop offset="1" stop-color="#75C2F6" />
+                                        </linearGradient>
+                                </defs>
+                        </svg>
                 </div>
         </section>
-        <script src="componentes/Header.js" type="text/javascript" defer></script>
+
+
+
+        <script src="componentes/header.js" type="text/javascript" defer></script>
 </body>
+
 </html>
