@@ -1,51 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Uruguai</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portal Uruguai</title>
-        <link rel="stylesheet" href="./reset.css">
-        <link rel="stylesheet" href="estilo.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-                rel="stylesheet">
-        <script src="./main.js"></script>
+  <body>
+    <div class="efeito"></div>
+    <header-component src="./" cor-fundo="#ffffff"></header-component>
 
-</head>
+    <section class="banner">
+      <div class="banner--conteudo">
+        <h1 class="banner--texto">Portal Uruguai</h1>
+        <p>
+          Bem-vindo ao Portal de Notícias do Colégio Republica Oriental do
+          Uruguai. Neste espaço, mantemos nossa comunidade escolar informada
+          sobre os eventos mais recentes, conquistas, projetos e atividades
+          emocionantes que acontecem em nosso colégio
+        </p>
+      </div>
+      <div class="banner--container">
+        <img src="./img/Logo-Portal.png" alt="" class="banner--img" />
+        <svg id="curva" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M187.97 99.308C152.382 86.0832 111.604 24.5332 116.701 0.334717H0.5V370H393C372.17 362.907 325.655 341.991 306.237 315.07C281.964 281.419 280.931 279.934 271.118 234.407C259.702 189.281 223.558 112.533 187.97 99.308Z"
+            fill="url(#paint0_linear_3_17)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_3_17"
+              x1="-0.0164394"
+              y1="0.33471"
+              x2="367.23"
+              y2="386.175"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#1D5D9B" />
+              <stop offset="1" stop-color="#75C2F6" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </section>
+    <section class="novidades">
+      <h2 class="subtitulo">Novidades</h2>
+      <div class="slider">
+        <div class="item">
+          <h3>Slide 1</h3>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores nisi
+          molestias unde accusantium, earum, corrupti animi explicabo distinctio
+          amet vel eius magnam ab minima debitis quod, quia ullam? Est nisi
+          voluptatem consequatur ut commodi cumque placeat quae adipisci
+          incidunt nesciunt?
+        </div>
+        <div class="item">
+          <h3>Slide 2</h3>
+          Rerum enim nisi minima quasi deleniti velit ratione voluptas.
+          Distinctio quia harum, repellendus ullam incidunt, et corporis
+          accusantium vitae eum quod accusamus ipsum sed, atque maiores. Culpa,
+          magnam. Minus pariatur sapiente nesciunt nihil molestias vero delectus
+          deleniti ullam reprehenderit magni.
+        </div>
+        <div class="item">
+          <h3>Slide 3</h3>
+          Debitis unde dicta nobis magni? Provident eius blanditiis consequuntur
+          accusantium, sed consectetur? Ducimus eveniet quos pariatur debitis
+          veritatis omnis? Expedita molestias explicabo nam, cumque eveniet odio
+          corrupti eaque. Omnis reiciendis at est maiores explicabo enim dolorum
+          quasi fugit, dolore molestias.
+        </div>
+        <div class="item">
+          <h3>Slide 4</h3>
+          Non tempora eaque asperiores quibusdam doloremque nemo laboriosam!
+          Sequi voluptate repudiandae id reprehenderit, minima odit architecto
+          eligendi pariatur eaque deserunt beatae molestias corporis laudantium!
+          Impedit suscipit at illo velit iure eligendi est quas. Nam,
+          consectetur. Assumenda labore ea ad eligendi.
+        </div>
+        <div class="item">
+          <h3>Slide 5</h3>
+          Vero deserunt tenetur et ex? Delectus, beatae sequi. Voluptates aut
+          doloribus nam beatae, numquam laboriosam sapiente facilis quasi quam
+          quidem, vel deserunt repudiandae voluptatibus blanditiis nulla ab
+          dolor. Odio ipsam debitis laudantium tempora expedita, quaerat soluta
+          repellat eligendi dolorum totam!
+        </div>
+        <button id="next">></button>
+        <button id="prev"><</button>
+      </div>
+    </section>
+    <section class="conteudos">
+      <h2 class="subtitulo">conteúdo</h2>
+      <div class="cards">
+        <div class="card">
+          <h3 class="card--titulo novidade">Novidades</h3>
+          <p class="card--texto">
+            Aqui você encontrará todos as novidades da escola
+          </p>
+          <div class="card--btn-logo">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-btn"
+              >Saiba mais!</a
+            >
+            <img src="./img/latest-news.png" alt="Icone últimas noticias" />
+          </div>
+        </div>
+        <div class="card projetos">
+          <h3 class="card--titulo">Projetos</h3>
+          <p class="card--texto">
+            Aqui você encontrará todos as novidades da escola
+          </p>
+          <div class="card--btn-logo">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-btn"
+              >Saiba mais!</a
+            >
+            <img
+              src="./img/logo-ideia-design.png"
+              alt="Icone ideias e design"
+            />
+          </div>
+        </div>
+        <div class="card agrinho">
+          <h3 class="card--titulo">Agrinho</h3>
+          <p class="card--texto">
+            Aqui você encontrará todos as novidades da escola
+          </p>
+          <div class="card--btn-logo">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-btn"
+              >Saiba mais!</a
+            >
+            <img
+              src="./img/logo-agrinho.png"
+              alt="Logo do agrinho - 3 crianças e o escrito agrinho"
+            />
+          </div>
+        </div>
+        <div class="card scratch">
+          <img
+            src="./img/logo-scratch.png"
+            alt="Logo escrito do Scratch"
+            class="card--titulo--img"
+          />
+          <p class="card--texto">
+            Aqui você encontrará todos as novidades da escola
+          </p>
+          <div class="card--btn-logo">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="card-btn"
+              >Saiba mais!</a
+            >
+            <img
+              src="./img/logo-scratch-gato.png"
+              alt="Logo do scratch - O gato laranja"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="rodape">
+      <img
+        src="./img/Logo-Portal.png"
+        alt="Logo portal do Uruguai, bandeira do Uruguai com o escrito portal Uruguai"
+      />
 
-<body>
-        <div class="efeito"></div>
-        <header-component src="./" cor-fundo="#ffffff"></header-component>
-
-        <section class="banner">
-                <hr />
-                <h1 class="banner--texto">Portal Uruguai</h1>
-                <p>Bem-vindo ao Portal de Notícias do Colégio Republica Oriental do Uruguai. Neste espaço, mantemos
-                        nossa comunidade escolar informada sobre os eventos mais recentes, conquistas, projetos e
-                        atividades emocionantes que acontecem em nosso colégio</p>
-
-                <div class="banner--container">
-                        <img src="./img/Logo-Portal.png" alt="" class="banner--img">
-                        <svg id="curva" viewBox="0 0 393 370" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M187.97 99.308C152.382 86.0832 111.604 24.5332 116.701 0.334717H0.5V370H393C372.17 362.907 325.655 341.991 306.237 315.07C281.964 281.419 280.931 279.934 271.118 234.407C259.702 189.281 223.558 112.533 187.97 99.308Z"
-                                        fill="url(#paint0_linear_3_17)" />
-                                <defs>
-                                        <linearGradient id="paint0_linear_3_17" x1="-0.0164394" y1="0.33471" x2="367.23"
-                                                y2="386.175" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#1D5D9B" />
-                                                <stop offset="1" stop-color="#75C2F6" />
-                                        </linearGradient>
-                                </defs>
-                        </svg>
-                </div>
-        </section>
-
-
-
-        <script src="componentes/header.js" type="text/javascript" defer></script>
-</body>
-
+      <h2>
+        Site desenvolvido pela equipe e alunos do CCM República Oriental do
+        Uruguai
+      </h2>
+    </footer>
+    <script src="componentes/header.js" type="text/javascript" defer></script>
+    <script src="./main.js"></script>
+  </body>
 </html>

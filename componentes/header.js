@@ -28,7 +28,7 @@ class Header extends HTMLElement{
         header.classList.add('cabecalho')
         header.setAttribute('cor-fundo', '#fff')
         header.setAttribute('src', './')
-        console.log(this.getAttribute('cor-fundo'))
+        
 
         return header
     }
@@ -38,7 +38,7 @@ class Header extends HTMLElement{
         logo.classList.add('cabecalho--logo')
         
         logo.src = this.getAttribute('src') + 'img/Logo-Portal.png'
-        console.log(logo.src)
+        
 
         return logo
     }
