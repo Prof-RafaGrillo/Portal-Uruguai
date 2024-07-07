@@ -12,7 +12,7 @@ class Header extends HTMLElement{
         const container = this.createContainer()
         const menu = this.createMenu()
         const logo = this.createLogo()
-        const logo2 = this.createLogo2()
+       
         const listaMenu = this.createLista()
         const listaMenuDesktop = this.createListaDesktop()
 
@@ -20,15 +20,15 @@ class Header extends HTMLElement{
         
 
         
-        container.appendChild(listaMenu)
-        container.appendChild(menu)
         container.appendChild(logo)
-
+        container.appendChild(listaMenu)
+        
         containerDesktop.append(listaMenuDesktop)
         
         header.appendChild(container)
+        header.appendChild(menu)
         header.appendChild(containerDesktop)
-        header.appendChild(logo2)
+      
         shadow.appendChild(header)
        
     }
@@ -36,7 +36,7 @@ class Header extends HTMLElement{
     createHeader(){
         const header = document.createElement('header')
         header.classList.add('cabecalho')
-        header.setAttribute('cor-fundo', 'rgba(224, 236, 255, 0.897)')
+        header.setAttribute('cor-fundo', '#fff')
         console.log(this.getAttribute('cor-fundo'))
         return header
     }
@@ -85,22 +85,13 @@ class Header extends HTMLElement{
         logo.classList.add('cabecalho--logo1')
         
         logo.setAttribute('src', "")
-        logo.src = this.getAttribute('src' ) + 'img/Logo_News.png'
+        logo.src = this.getAttribute('src' ) + 'img/Logo-Portal.png'
 
 
         return logo
     }
 
-    createLogo2(){
-        const logo2 = document.createElement('img')
-        logo2.classList.add('cabecalho--logo2')
-        
-        logo2.setAttribute('src', "")
-        logo2.src = this.getAttribute('src' ) + 'img/Portal_Uruguai.png'
-
-
-        return logo2
-    }
+  
 
     createContainerDesktop(){
         const container = document.createElement('div')
@@ -169,6 +160,7 @@ class Header extends HTMLElement{
             }
             .cabecalho--logo2{
                 width: 200px;
+                margin-right: 15px;
             }
             .lista--menu{
                 display: none;
