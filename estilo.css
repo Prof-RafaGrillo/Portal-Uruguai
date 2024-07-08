@@ -28,6 +28,8 @@ body{
 .banner{
     width: 100%;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
 .banner hr{
     position: relative;
@@ -67,8 +69,10 @@ body{
     position: relative;
     height: 370px;
     width: 100%;
-  
+    order:1;
+
 }
+
 
 #curva{
     position: absolute;
@@ -76,6 +80,12 @@ body{
     width: 100%;
     height: 370px;
 }
+#curva2{
+    position: absolute;
+    display: none;
+}
+
+
 .banner--img{
     position: relative;
     z-index: 2;
@@ -174,7 +184,6 @@ body{
     text-align: justify;
     background-color: var(--cor-fundo-site);
 
-
 }
 
 .card--titulo{
@@ -231,4 +240,27 @@ body{
     text-align: center;
     font-size: 10px;
     margin-left: 5em;
+}
+
+@media screen and (min-width: 780px){
+    .banner{
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 470px;
+    }
+    .banner--conteudo{
+        width: 80%;
+        margin-right: 200px;
+    }
+    #curva{
+        display: none;
+    }
+    #curva2{
+        display: block;
+    }
+   
+    .card{
+        margin-left: 2em;
+    }
 }
