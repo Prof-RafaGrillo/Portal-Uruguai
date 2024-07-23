@@ -64,11 +64,11 @@ class Header extends HTMLElement{
         listaMenu.classList.add('lista--menu')
         listaMenu.style.display='none'
         listaMenu.innerHTML = `
-        <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}/index.html'> HOME </a> </li>
-        <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}pages/index-scratch.html'> NOTÍCIAS </a> </li>
-        <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}pages/index-scratch.html'> PROJETOS </a> </li>
-        <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}Pages/Scratch/index-scratch.html'> SCRATCH </a> </li>
-        <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}pages/index-scratch.html'> AGRINHO </a> </li>
+        <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}index.html'> HOME </a> </li>
+        <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}Pages/404/index.html'> NOTÍCIAS </a> </li>
+        <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}Pages/projetos/index_projetos.html'> PROJETOS </a> </li>
+        <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}Pages/404/index.html'> SCRATCH </a> </li>
+        <li class = "lista--menu-item"> <a class=" lista--menu-link"  href='${caminho}Pages/404/index.html'> AGRINHO </a> </li>
     `
         return listaMenu
     }
