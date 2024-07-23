@@ -1,0 +1,13 @@
+body{
+    background-color: #f8da3f;
+}
+.imagem{
+    margin-top: 50px;
+    background-image: url("./em_construcao.jpg");
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    height: 900px;
+    width: 100%;
+}
