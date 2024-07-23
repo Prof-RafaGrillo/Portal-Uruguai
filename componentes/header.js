@@ -145,6 +145,14 @@ class Header extends HTMLElement{
             .lista--menu-link:hover{
                 color: black;
             }
+            @media screen and (min-width: 780px){
+                .cabecalho--logo, .cabecalho--menu {
+                    margin: 0 50px
+                }
+                .lista--menu{
+                    width: 30%;
+                }
+            }
         `
         return style
     }
