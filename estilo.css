@@ -158,6 +158,13 @@ body{
     left: unset;
     right: 8%;
 }
+.agrinho-card{
+    color: #fff;
+    background-color:#135b2bd7;
+}
+.agrinho-card a{
+    color: #fff;
+}
 
 .conteudos{
     display: flex;
