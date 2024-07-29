@@ -90,6 +90,7 @@ class Header extends HTMLElement{
             }
         })
         efeito.addEventListener('click', () => {
+            console.log('teste')
             efeito.style.display = 'none'
             listaMenu.style.display = 'none'
             body.style.overflow = 'visible'
