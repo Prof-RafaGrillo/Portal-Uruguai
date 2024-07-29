@@ -1,12 +1,12 @@
 const caminho = "../../bd/agrinho.json"
+const conteudo = document.querySelector('.container--lista')
+
 
 fetch(caminho).then((response) =>{
-    response.json().then((projetos)=>{
-        console.log(projetos['projetos'])
+    response.json().then((dados)=>{
+        dados.projetos.map((projeto) => {
+            conteudo.innerHTML += `<li class="item--projeto">${projeto.projeto}</li>`
+        })
     })
+    
 })
-
-const conteudo = document.querySelector('.container')
-
-const projetos = JSON.parse('../../bd/agrinho.json')
-console.log(projetos)
