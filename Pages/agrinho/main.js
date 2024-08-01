@@ -23,11 +23,11 @@ async function carregarProjetos(inicio, fim){
                 
             })
             console.log(inicio, fim)
-            for (let i = inicio; i < fim - 1; i++){
+            for (let i = inicio; i < fim; i++){
                 console.log(listaProjetos[i])
                 conteudo.innerHTML += `<li class="item--projeto">${listaProjetos[i]}</li>`
             }
-
+            console.log(listaProjetos.length)
             return listaProjetos
            
          
@@ -45,11 +45,11 @@ const html = {
         return document.querySelector(element)
     }
 }
-let perPage = 4
+let perPage = 3
 const state = {
     page: 1,
     perPage,
-    totalPage: 19,
+    totalPage: 25,
     maxVisibleButtons: 5
 }
 
