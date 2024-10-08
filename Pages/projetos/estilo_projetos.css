@@ -122,4 +122,8 @@ footer{
     .cartoes{
         grid-template-columns: 100%;
     }
+    .cabecalho h2{
+        padding: 1em 1em 0.1em 1em;
+        font-size: 20px;
+    }
 }
