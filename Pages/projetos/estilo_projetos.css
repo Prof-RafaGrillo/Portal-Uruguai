@@ -120,6 +120,6 @@ footer{
 
 @media (min-width: 768px){
     .cartoes{
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
 }
