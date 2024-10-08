@@ -5,60 +5,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tauri&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Qwitcher+Grypen:wght@400;700&display=swap');
 
-
-body{
-    background: rgb(187,211,247);
-    background: linear-gradient(180deg, rgba(187,211,247,1) 0%, rgba(22,21,54,1) 100%);
-    font-family: "Noto Sans", sans-serif;
+:root{
+    --cor-fundo: linear-gradient(169deg, rgba(4,26,176,1) 0%, rgba(78,94,204,1) 53%, rgba(255,255,255,1) 100%);
+    --font-secundaria: "Qwitcher Grypen", cursive;
+    --font-principal: "Bebas Neue", sans-serif;
 }
 
-.corpo1{
-    background-color: rgba(224, 236, 255, 0.897) ;
-    font-size: 15px;
-    color: darkblue;
-    text-align: justify;
-    margin-top: 0.5em;
-    padding: 1em;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.item{
-    margin: 1em 0.5em;
-    border-radius: 2em;
-    display: flex;
-    justify-content:space-around;
-    background-color: rgba(224, 236, 255, 0.897);
-    align-items: center;
-}
 
-.item-descricao{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    
-}
-
-.images{
-    width: 30%;
-}
-
-.buton{
-    background-color: #03961b;
-    color: white;
-    padding: 12px 28px; 
-    border: none;
-    border-radius: 12px; 
-}
-
-.titulo-comunidade{
-    font-size: 16px;
-}
-.Logo-CCM{
-    width: 100px;
-    height: 100px;
-}
 .efeito{
     display: none;
     position: absolute;
@@ -70,71 +30,91 @@ body{
 
 }
 
-@media screen and (min-width: 768px) {
-      .corpo1{
-        background-color: rgba(224, 236, 255, 0.897) ;
-        font-size: 150%;
-        color: darkblue;
-    }
-    
-    .item{
-         display: grid; 
-         grid-template-columns: 35% 65%;
-         align-items: center;
-         background-color: rgba(224, 236, 255, 0.897);
-         justify-content: space-evenly;
-         border-radius: 0px;
-         height: 300px;
-    }
 
-    .item img{
-        width: auto;
-        height: 300px;
-        margin-left: 100px;
-    }
 
-    .images{
-        width: 25%;
-    }
-    .item-descricao{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-      
-    }
+
+body{
+    background: var(--cor-fundo);
+    font-family: var(--font-principal);
+}
+
+.cabecalho{
+    margin-top: 20px;
+    text-align: center;
+}
+.cabecalho h2{
+    padding: 2em 2em 0.1em 2em;
+    font-size: 50px;
+}
+
+
+
+.primeiroTri{
+    font-family: var(--font-secundaria);
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.primeiroTri h2{
+    font-size:70px;
+    margin: 0.5em 0;
+}
+
+.cartoes{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-items: center;
+    margin-bottom: 1em;
+}
+
+.cartao--img{
+    width: 45%;
     
-    .logos{
-        width: 100%;
-        font-size: 30px;
-    }
+}
+.cartao--img-talentos{
+    width: 60%;
+    margin-bottom: 70px;
+}
+
+.cartao--img--ccm{
+    width: 35%;
+}
+.cartao{
+    display: grid;
+    grid-template-rows: 75% 25%;
+    background-color: #f1eded;
+    margin-top: 1em;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+.cartao:hover{
+    background-color: rgba(128, 128, 128, 0.657);
+}
+
+.cartao h3{
     
-    .buton{
-        display: flex;
-        justify-content: space-between;
-        background-color: #03961b;
-        border: none; 
-        color: white; 
-        padding: 15px 32px; 
-        text-align: center; 
-        text-decoration: none; 
-        font-size: 16px;
-        margin: 4px 100px;
-        cursor: pointer; 
-        border-radius: 12px; 
-        
-    
-        font-family: "Tauri", sans-serif;
-    }
-    
-    .buton:hover{
-      
-        background-color: #a6f0ad; 
-        color: black; 
-    
-    }
-    .titulo-comunidade{
-        font-size: 45px;
-    }
+    font-size: 32px;
+}
+
+
+
+
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    justify-items: center;
+    color: #f1eded;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    bottom: 0;
 }
 
