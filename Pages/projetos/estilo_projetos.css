@@ -121,7 +121,7 @@ footer{
 @media (max-width: 768px){
     .cartoes{
         
-        grid-template-columns: 80%;
+        grid-template-columns: 60%;
         justify-content: center;
     }
     .cabecalho h2{
