@@ -118,3 +118,8 @@ footer{
     bottom: 0;
 }
 
+@media (min-width: 768px){
+    .cartoes{
+        grid-template-columns: 1fr;
+    }
+}
